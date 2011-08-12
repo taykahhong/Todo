@@ -1,0 +1,93 @@
+html {
+    text-align: center;
+    padding: 85px;
+}
+
+body {
+    text-align: left;
+    font-family: Helvetica;
+    margin: auto;
+    width: 500px;
+    color: #555;
+}
+
+h1 img {
+    width: 100px;
+}
+
+
+h2 {
+    font-size: 15px;
+    color: #aaa;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 13px;
+    color: #bababa;
+    line-height: 1.5;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+#app {
+    margin: 25px auto 25px auto;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.line-through {
+	  text-decoration: line-through;
+}
+
+ul li a {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    text-decoration: none;
+}
+
+ul li.selected {
+	  background: #eee;
+}
+
+label {
+    display: block;
+    margin-bottom: 3px;
+    font-size: 13px;
+}
+
+input[name=task] {
+    width: 480px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    padding: 7px;
+}
+
+button {
+    font-size: 13px;
+    padding: 5px 10px;
+    border: none;
+    background: #607890;
+    color: #fff;
+}
+
+#notice {
+    height: 25px;
+    font-size: 13px;
+    margin: 15px 0 15px 0;
+}
+
+#notice .success, #notice .error {
+    color: white;
+    background: #66c159;
+    padding: 10px;
+}
+
+#notice .error {
+    background: white;
+}

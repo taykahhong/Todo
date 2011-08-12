@@ -1,0 +1,24 @@
+<% if(collection.models.length > 0) { %>
+    <ul>
+    <% var id = 1; %>
+    <% collection.each(function(item) { %>
+      <% if (item.get('status') == 'live') { %>
+        <% if (item.get('done') == true) %>
+          <li id="list-<%= id %>"><a id="<%= item.id %>" class="line-through" href='#items/<%= item.id %>'><%= item.escape('task') %></a></li>
+        <% else %>
+		  <li id="list-<%= id %>"><a id="<%= item.id %>" href='#items/<%= item.id %>'><%= item.escape('task') %></a></li>
+	    <% id++; %>  
+	  <% } %>
+    <% }); %>
+    </ul>
+<% } %>
+
+<% if(collection.models.length == 1) { %>
+  <br />
+  <h3>
+    <em>Tab</em>: Create a task<br />
+    <em>Enter</em>: Edit a task<br />
+    <em>Del</em>: Delete a task<br />
+    <em>Esc</em>: Return to list
+  </h3>
+<% } %>
